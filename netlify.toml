@@ -1,4 +1,6 @@
+[functions]
+	external_node_modules = ["express"]
 [build]
-  command = "npm start"
-  functions = "lambda"
-  publish = "./"
+	command = "npm start"
+	functions = "lambda"
+	publish = "./"
