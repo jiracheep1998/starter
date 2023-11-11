@@ -1,11 +1,5 @@
-[functions]
-	external_node_modules = ["express"]
 [build]
-	command = "npm start"
-	functions = "lambda"
-	publish = "./"
-[[redirects]]
-  force = true
-  from = "/api/*"
-  status = 200
-  to = "/.netlify/functions/api/:splat"
+  functions = "functions"
+
+[dev]
+  publish = "dist"
