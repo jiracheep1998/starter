@@ -1,12 +1,15 @@
-// index.js
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 3000;
+const express = require("express");
 
-app.get('/', (req, res) => {
-  res.send('Hello, this is a demo with Node.js and Express.js on Vercel!');
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Express on Vercel");
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.get("/home", (req, res) => {
+  res.send("HOME!");
+});
+
+app.listen(5000, () => {
+  console.log("Running on port 5000!");
 });
