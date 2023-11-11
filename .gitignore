@@ -1,3 +1,8 @@
+/package-lock.json
+/*.html
+/partials
+/.editorconfig
+
 # Logs
 logs
 *.log
